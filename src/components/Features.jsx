@@ -19,17 +19,17 @@ const features = [
 
 function Features() {
   return (
-    <section id="features" className="bg-white py-20">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="features" className="bg-[var(--neo-soft)] py-20">
+      <div className="mx-auto max-w-6xl px-6">
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900">Features</h2>
+          <h2 className="text-3xl font-bold text-[var(--neo-text)]">Features</h2>
 
-          <p className="mt-3 text-gray-600">
+          <p className="mt-3 text-[var(--neo-muted)]">
             Everything is built using React and Tailwind CSS.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mt-12">
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
           {features.map((feature) => (
             <FeatureList
               id={feature.id}

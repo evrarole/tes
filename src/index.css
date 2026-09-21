@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+:root {
+  --neo-bg: #edf5ff;
+  --neo-surface: #f7fbff;
+  --neo-card: rgba(255, 255, 255, 0.78);
+  --neo-primary: #4b7bec;
+  --neo-primary-strong: #2d5aa9;
+  --neo-primary-soft: #dfeeff;
+  --neo-soft: #f4f9ff;
+  --neo-text: #183a5a;
+  --neo-muted: #5c7591;
+  --neo-border: rgba(88, 126, 171, 0.22);
+  --neo-ring: rgba(75, 123, 236, 0.18);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: Inter, "Segoe UI", sans-serif;
+  background: linear-gradient(180deg, #f8fbff 0%, #edf5ff 35%, #dfeeff 100%);
+  color: var(--neo-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(75, 123, 236, 0.2);
+}

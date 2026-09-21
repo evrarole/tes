@@ -1,22 +1,24 @@
 function Navbar() {
   return (
-    <nav className="bg-white border-b border-gray-200">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <h1 className="text-2xl font-bold text-blue-600">Kelas Front-End</h1>
+    <nav className="sticky top-0 z-30 border-b border-[var(--neo-border)] bg-white/80 backdrop-blur-md">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <h1 className="text-2xl font-bold text-[var(--neo-primary-strong)]">
+          Kelas Front-End
+        </h1>
 
         <div className="flex gap-6">
-          <a href="#" className="text-gray-600 hover:text-blue-600">
+          <a href="/" className="text-[var(--neo-muted)] transition hover:text-[var(--neo-primary)]">
             Home
           </a>
 
-          <a href="#" className="text-gray-600 hover:text-blue-600">
+          <a href="/Features" className="text-[var(--neo-muted)] transition hover:text-[var(--neo-primary)]">
             Features
           </a>
 
-          <a href="#" className="text-gray-600 hover:text-blue-600">
+          <a href="/About" className="text-[var(--neo-muted)] transition hover:text-[var(--neo-primary)]">
             About
           </a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">
+          <a href="/Contact" className="text-[var(--neo-muted)] transition hover:text-[var(--neo-primary)]">
             Contact
           </a>
         </div>

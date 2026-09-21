@@ -20,51 +20,51 @@ const features = [
 
 export default function Features() {
   return (
-    <div className="bg-white text-gray-900">
-      <div className="max-w-6xl mx-auto px-6 py-24">
+    <div className="bg-[var(--neo-bg)] text-[var(--neo-text)]">
+      <div className="mx-auto max-w-6xl px-6 py-24">
         {/* Header */}
-        <header className="text-center border-b border-gray-200 pb-10 mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
-            Our <span className="text-blue-600">Features</span>
+        <header className="mb-16 border-b border-[var(--neo-border)] pb-10 text-center">
+          <h1 className="text-4xl font-bold text-[var(--neo-text)] md:text-5xl">
+            Our <span className="text-[var(--neo-primary)]">Features</span>
           </h1>
-          <p className="mt-3 text-gray-600 text-sm">
+          <p className="mt-3 text-sm text-[var(--neo-muted)]">
             What makes this project easy to build with
           </p>
         </header>
 
         {/* Intro + pull quote */}
-        <section className="grid md:grid-cols-2 gap-12 md:gap-16 mb-16">
+        <section className="mb-16 grid gap-12 md:grid-cols-2 md:gap-16">
           <div>
-            <p className="text-lg text-gray-600">
+            <p className="text-lg text-[var(--neo-muted)]">
               This project is built entirely with React and Tailwind CSS,
               split into small, reusable components that are easy to follow
               and extend.
             </p>
-            <p className="text-lg text-gray-600 mt-4">
+            <p className="mt-4 text-lg text-[var(--neo-muted)]">
               Each piece — from the layout to the individual cards — is kept
               simple on purpose, so the structure stays clear whether you're
               learning React for the first time or building on top of it.
             </p>
           </div>
 
-          <blockquote className="border-l-4 border-blue-600 pl-6 flex items-center">
-            <p className="text-2xl md:text-3xl font-bold text-gray-900 italic">
+          <blockquote className="flex items-center border-l-4 border-[var(--neo-primary)] pl-6">
+            <p className="text-2xl font-bold italic text-[var(--neo-text)] md:text-3xl">
               "Simple components, composed together, build something awesome."
             </p>
           </blockquote>
         </section>
 
         {/* Feature grid */}
-        <section className="bg-white py-10 border-t border-gray-200">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+        <section className="border-t border-[var(--neo-border)] bg-white/40 py-10">
+          <h2 className="mb-4 text-3xl font-bold text-[var(--neo-text)]">
             What's included
           </h2>
-          <p className="text-gray-600 max-w-2xl mb-10">
+          <p className="mb-10 max-w-2xl text-[var(--neo-muted)]">
             A quick look at the core ideas behind how this site is put
             together.
           </p>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid gap-6 md:grid-cols-3">
             {features.map((feature) => (
               <FeatureList
                 key={feature.id}
